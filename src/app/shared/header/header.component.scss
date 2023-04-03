@@ -1,0 +1,19 @@
+.LogoHeader{
+display: flex;
+justify-content: center;
+left: 1px;
+top: 1px;
+}
+.Logo{
+    font-size: 36px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.navbar{
+display: flex;
+justify-content: center;
+background: #FFC970;
+}
+.logolink{
+   margin: 8px;
+   text-decoration: none;
+}

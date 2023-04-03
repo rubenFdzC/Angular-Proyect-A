@@ -1,0 +1,10 @@
+<p>product-page works!</p>
+<div  *ngFor="let product of products">
+    <div ><p>{{product.name}}</p>
+    <img class="productImg" src="{{product.image}}">
+    <p class="productDescrip">{{product.description}}</p>
+    <p class="productPrice">${{product.price}}</p>
+</div>
+</div>
+
+<app-footer></app-footer>
