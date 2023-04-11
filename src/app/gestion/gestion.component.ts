@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./gestion.component.scss']
 })
 export class GestionComponent {
-
+newItem =[
+  {
+  name : "",
+  image : "",
+  price : "",
+  }
+]
+saveNewItem(){
+  console.log("funciona el form")
+}
 }

@@ -2,6 +2,8 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GestionComponent } from './gestion/gestion.component';
+import { ProductDetailsPageComponent } from './product-page/product-details-page/product-details-page.component';
 
 const routes: Routes = [
   {
@@ -11,7 +13,10 @@ const routes: Routes = [
     path:"Products",component : ProductPageComponent
   },
   {
-    path:"Gestion",component : HomePageComponent
+    path:"Products/:id",component : ProductDetailsPageComponent
+  },
+  {
+    path:"Gestion",component : GestionComponent
   },
 ];
 

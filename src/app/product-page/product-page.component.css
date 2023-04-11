@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.productImg {
+  height: 224px;
+  left: 16px;
+  right: 16px;
+  top: 16px;
+  border-radius: 4px;
+}
+
+.productDescrip {
+  left: 16px;
+  right: 16px;
+  top: 252px;
+  bottom: 146px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.productPrice {
+  color: black;
+  font-weight: bold;
+}/*# sourceMappingURL=product-page.component.css.map */

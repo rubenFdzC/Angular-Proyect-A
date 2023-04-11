@@ -1,0 +1,34 @@
+footer {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.footer {
+  color: white;
+  background-color: #333333;
+  padding: 20px;
+}
+
+.siguenos {
+  display: flex;
+  justify-content: center;
+}
+
+.RRSS {
+  display: flex;
+  justify-content: center;
+}
+
+.RS {
+  text-decoration: none;
+  margin: 2px;
+  padding: 4px;
+}
+
+.copyr {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=footer.component.css.map */

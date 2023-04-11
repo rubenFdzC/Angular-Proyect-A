@@ -1,0 +1,21 @@
+.ItemContainer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+}
+.itemForm{
+    display: flex;
+    flex-direction: column;
+}
+.ItemsParams{
+display: flex;
+flex-direction: column;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+}
+.SaveProduct{
+    margin-top: 30px;
+}

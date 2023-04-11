@@ -1,10 +1,14 @@
-<p>product-page works!</p>
-<div  *ngFor="let product of products">
-    <div ><p>{{product.name}}</p>
+<input type="text" [(ngModel)]="searchText">
+<button (click)="getProduts(1,searchText)">Search</button>
+
+<div class="container">
+<div class="productCard" routerLink="/Products/{{product.id}}" *ngFor="let product of products">
     <img class="productImg" src="{{product.image}}">
+    <p>{{product.name}}</p>
     <p class="productDescrip">{{product.description}}</p>
     <p class="productPrice">${{product.price}}</p>
 </div>
 </div>
-
-<app-footer></app-footer>
+<div class="pagination">
+ <app-pagination  (changePageEmitter)="getProduts($event,searchText)"></app-pagination>
+</div>

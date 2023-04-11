@@ -1,0 +1,30 @@
+<!-- <input type="text" [(ngModel)]="text">
+<button (click)="save()">Guardar producto</button> -->
+<div class="ItemContainer">
+<h2>Creación/Edicion de productos</h2>
+
+<form class="itemForm" [formGroup]="itemForm" (ngSubmit)="submit()">
+    <label class="ItemsParams" >
+        Nombre del Producto :
+        <input type="text">
+    </label>
+    <!-- <span *ngIf="itemForm.controls.name.erros">Campo obligatorio</span> -->
+    <label class="ItemsParams" >
+        Precio:
+        <input type="number" formControlName="precio">
+    </label>
+    <label  class="ItemsParams">
+        Descripción :
+        <input type="text" formControlName="description">
+    </label>
+    <label class="ItemsParams" >
+        Ruta de la imagen :
+        <input type="text"formControlName="img">
+    </label>
+    <label class="ItemsParams" >
+        Opiniones:
+        <input type="number"formControlName="opinion">
+    </label>
+    <button class="SaveProduct">Guardar</button>
+</form>
+</div>

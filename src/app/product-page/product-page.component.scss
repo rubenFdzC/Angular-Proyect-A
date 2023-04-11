@@ -1,26 +1,24 @@
-.productCard{
+.container{
     display: flex;
     justify-content: space-between;
+    
+}
+.productCard{
+margin: 15px;
+text-align: center;
 }
 .productImg{
-    height: 224px;
-    left: 16px;
-    right: 16px;
-    top: 16px;
-    border-radius: 4px;
+  height: 150px;
+  width: 150px;
 }
 .productDescrip{
-    left: 16px;
-right: 16px;
-top: 252px;
-bottom: 146px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
+   font-size: medium;
 }
 .productPrice{
    color: black;
    font-weight: bold
+}
+.pagination{
+   display: flex;
+ justify-content: center;
 }

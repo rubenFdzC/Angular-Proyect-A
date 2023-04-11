@@ -8,15 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductPageComponent implements OnInit {
 
+  searchText : string = "";
   products!:any;
   constructor(private productsService : ProductsService) {}
 
   ngOnInit(): void {
-    this.productsService.getProduts().subscribe((res : any) => {
+    this.productsService.getProduts(1,"")
+     
+  }
+  getProduts(page :number , text:string){
+    this.productsService.getProduts(page,text).subscribe((res:any) =>{
       console.log(res)
       this.products = res;
-    });
-      // fetch("http://localhost:3000/products").then(res => res.json()).then(res =>
-      // console.log(res)) no es necesario , ya te lo parchea a Json con el service . 
+    })
   }
 }

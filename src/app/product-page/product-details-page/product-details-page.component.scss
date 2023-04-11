@@ -1,0 +1,18 @@
+.detailsContainer{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px;
+    background-color: rgb(244, 225, 196);
+}
+.imgDet{
+    margin: 15px;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 60px;
+   
+}
