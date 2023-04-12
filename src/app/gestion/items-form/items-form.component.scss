@@ -1,7 +1,12 @@
+.FullPage{
+    display: flex;
+    justify-content: space-around;
+}
 .ItemContainer{
     display: flex;
     flex-direction: column;
-    margin-right: 300px;
+    margin-right: 20px;
+    padding: 5px;
 }
 .itemForm{
     display: flex;

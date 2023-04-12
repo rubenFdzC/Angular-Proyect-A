@@ -1,14 +1,17 @@
-<input type="text" [(ngModel)]="searchText">
-<button (click)="getProduts(1,searchText)">Search</button>
+<!-- <input type="text" [(ngModel)]="searchText">
+<button (click)="getProduts(1)">Search</button> -->
 
-<div class="container">
+<div  class="container">
 <div class="productCard" routerLink="/Products/{{product.id}}" *ngFor="let product of products">
-    <img class="productImg" src="{{product.image}}">
-    <p>{{product.name}}</p>
+    <img class="productImg" src="{{product.image}}" width="250" height="250">
+    <h3>{{product.name}}</h3>
     <p class="productDescrip">{{product.description}}</p>
     <p class="productPrice">${{product.price}}</p>
 </div>
 </div>
+<!-- <div *ngIf="!product">
+    No product 
+</div> -->
 <div class="pagination">
- <app-pagination  (changePageEmitter)="getProduts($event,searchText)"></app-pagination>
+ <app-pagination  (changePageEmitter)="getProduts($event)"></app-pagination>
 </div>

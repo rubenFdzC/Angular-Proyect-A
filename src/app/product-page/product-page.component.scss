@@ -1,11 +1,14 @@
 .container{
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
+  
     
 }
 .productCard{
 margin: 15px;
 text-align: center;
+border: 1px solid rgba(148, 142, 126, 0.547);
 }
 .productImg{
   height: 150px;
